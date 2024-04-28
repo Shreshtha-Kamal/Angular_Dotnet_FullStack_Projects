@@ -1,0 +1,17 @@
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementBLL\bin\Debug\net6.0\BillManagementBLL.deps.json
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementBLL\bin\Debug\net6.0\BillManagementBLL.dll
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementBLL\bin\Debug\net6.0\BillManagementBLL.pdb
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementBLL\bin\Debug\net6.0\BillManagementDAL.dll
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementBLL\bin\Debug\net6.0\BillManagementDomain.dll
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementBLL\bin\Debug\net6.0\BillManagementDAL.pdb
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementBLL\bin\Debug\net6.0\BillManagementDomain.pdb
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementBLL\obj\Debug\net6.0\BillManagementBLL.csproj.AssemblyReference.cache
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementBLL\obj\Debug\net6.0\BillManagementBLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementBLL\obj\Debug\net6.0\BillManagementBLL.AssemblyInfoInputs.cache
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementBLL\obj\Debug\net6.0\BillManagementBLL.AssemblyInfo.cs
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementBLL\obj\Debug\net6.0\BillManagementBLL.csproj.CoreCompileInputs.cache
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementBLL\obj\Debug\net6.0\BillManagementBLL.csproj.CopyComplete
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementBLL\obj\Debug\net6.0\BillManagementBLL.dll
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementBLL\obj\Debug\net6.0\refint\BillManagementBLL.dll
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementBLL\obj\Debug\net6.0\BillManagementBLL.pdb
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementBLL\obj\Debug\net6.0\ref\BillManagementBLL.dll

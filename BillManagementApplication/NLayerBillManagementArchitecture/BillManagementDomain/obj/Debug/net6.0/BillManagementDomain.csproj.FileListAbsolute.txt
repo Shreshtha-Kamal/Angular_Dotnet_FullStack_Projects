@@ -1,0 +1,12 @@
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementDomain\bin\Debug\net6.0\BillManagementDomain.deps.json
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementDomain\bin\Debug\net6.0\BillManagementDomain.dll
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementDomain\bin\Debug\net6.0\BillManagementDomain.pdb
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementDomain\obj\Debug\net6.0\BillManagementDomain.csproj.AssemblyReference.cache
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementDomain\obj\Debug\net6.0\BillManagementDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementDomain\obj\Debug\net6.0\BillManagementDomain.AssemblyInfoInputs.cache
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementDomain\obj\Debug\net6.0\BillManagementDomain.AssemblyInfo.cs
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementDomain\obj\Debug\net6.0\BillManagementDomain.csproj.CoreCompileInputs.cache
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementDomain\obj\Debug\net6.0\BillManagementDomain.dll
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementDomain\obj\Debug\net6.0\refint\BillManagementDomain.dll
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementDomain\obj\Debug\net6.0\BillManagementDomain.pdb
+C:\Assignments\BillManagement\NLayerBillManagementArchitecture\BillManagementDomain\obj\Debug\net6.0\ref\BillManagementDomain.dll

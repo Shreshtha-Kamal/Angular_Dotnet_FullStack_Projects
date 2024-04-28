@@ -1,0 +1,17 @@
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDAL\bin\Debug\net6.0\NLayerMovieBookingAppDAL.deps.json
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDAL\bin\Debug\net6.0\NLayerMovieBookingAppDAL.runtimeconfig.json
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDAL\bin\Debug\net6.0\NLayerMovieBookingAppDAL.dll
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDAL\bin\Debug\net6.0\NLayerMovieBookingAppDAL.pdb
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDAL\bin\Debug\net6.0\NLayerMovieBookingAppDomain.dll
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDAL\bin\Debug\net6.0\NLayerMovieBookingAppDomain.pdb
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDAL\obj\Debug\net6.0\NLayerMovieBookingAppDAL.csproj.AssemblyReference.cache
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDAL\obj\Debug\net6.0\NLayerMovieBookingAppDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDAL\obj\Debug\net6.0\NLayerMovieBookingAppDAL.AssemblyInfoInputs.cache
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDAL\obj\Debug\net6.0\NLayerMovieBookingAppDAL.AssemblyInfo.cs
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDAL\obj\Debug\net6.0\NLayerMovieBookingAppDAL.csproj.CoreCompileInputs.cache
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDAL\obj\Debug\net6.0\NLayerMovieBookingAppDAL.csproj.CopyComplete
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDAL\obj\Debug\net6.0\NLayerMovieBookingAppDAL.dll
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDAL\obj\Debug\net6.0\refint\NLayerMovieBookingAppDAL.dll
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDAL\obj\Debug\net6.0\NLayerMovieBookingAppDAL.pdb
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDAL\obj\Debug\net6.0\NLayerMovieBookingAppDAL.genruntimeconfig.cache
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDAL\obj\Debug\net6.0\ref\NLayerMovieBookingAppDAL.dll

@@ -1,0 +1,11 @@
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDomain\bin\Debug\net6.0\NLayerMovieBookingAppDomain.deps.json
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDomain\bin\Debug\net6.0\NLayerMovieBookingAppDomain.dll
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDomain\bin\Debug\net6.0\NLayerMovieBookingAppDomain.pdb
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDomain\obj\Debug\net6.0\NLayerMovieBookingAppDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDomain\obj\Debug\net6.0\NLayerMovieBookingAppDomain.AssemblyInfoInputs.cache
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDomain\obj\Debug\net6.0\NLayerMovieBookingAppDomain.AssemblyInfo.cs
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDomain\obj\Debug\net6.0\NLayerMovieBookingAppDomain.csproj.CoreCompileInputs.cache
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDomain\obj\Debug\net6.0\NLayerMovieBookingAppDomain.dll
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDomain\obj\Debug\net6.0\refint\NLayerMovieBookingAppDomain.dll
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDomain\obj\Debug\net6.0\NLayerMovieBookingAppDomain.pdb
+C:\Assignments\MovieBookingApp\NLayerMovieBookingAppAPI\NLayerMovieBookingAppDomain\obj\Debug\net6.0\ref\NLayerMovieBookingAppDomain.dll
