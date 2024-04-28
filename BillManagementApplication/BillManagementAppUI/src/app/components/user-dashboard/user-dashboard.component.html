@@ -1,0 +1,67 @@
+<div class="container mt-3">
+    <div class="d-flex justify-content-center align-items-center">
+        <h2 class="mb-2 fw-bold text-decoration-underline text-success-emphasis">User Data</h2>
+    </div>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th scope="row">Name</th>
+                <td>{{userData?.name}}</td>
+                <th scope="row">UserId</th>
+                <td>{{userData?.id}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Address</th>
+                <td>{{userData?.address}} ({{userData?.pincode}})</td>
+                <th scope="row">Email</th>
+                <td>{{userData?.email}}</td>
+                
+            </tr>
+            <tr>
+                <th >PhoneNumber</th>
+                <td>{{userData?.phoneNumber}}</td>
+                <th >LoadAllowed</th>
+                <td>{{userData?.loadAllowed}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="d-flex justify-content-center align-items-center">
+    <h2 class="mb-2 fw-bold text-decoration-underline text-success-emphasis">Previous Six Months Bill Details</h2>
+</div>
+
+<div class="container">
+    <div class="d-flex flex-column justify-content-center mt-3">
+        <div >
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col col-2">Bill Id</th>
+                    <th scope="col col-2">Units Consumed</th>
+                    <th scope="col col-2">PricePerUnit</th>
+                    <th scope="col col-2">Bill Amount</th>
+                    <th scope="col col-2">Bill Status</th>
+                    <th scope="col col-2">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let bill of userSixMonthBillDetail">
+                    <th scope="row">{{bill?.id}}</th>
+                    <td>{{bill?.unitsConsumed}}</td>
+                    <td>{{bill?.perUnitPrice}}</td>
+                    <td>{{bill?.totalAmount}}</td>
+                    <td>{{bill?.status}}</td>
+                    <td *ngIf="bill?.status === 'Pending'">
+                        <button type="submit" class="btn btn-primary" (click)="payBill(bill?.id)">Pay Bill</button>
+                    </td>
+                    <td *ngIf="bill?.status !== 'Pending'">
+                        AlreadyPaid
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+

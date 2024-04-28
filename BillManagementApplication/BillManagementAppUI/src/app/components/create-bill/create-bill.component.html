@@ -1,0 +1,65 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-center">Add User</h5>
+  
+            <form [formGroup]="createBillForm" (ngSubmit)="createBill()">
+              <div class="mb-3">
+                <label for="userId" class="form-label">UserID**</label>
+                <input type="text" class="form-control" id="userId" name="userId" placeholder="Enter UserID" formControlName="userId" >
+                <div style="color: red" *ngIf="userId && userId.invalid && userId.touched">ID should be atleast of 2 characters</div>
+              </div>
+  
+              <div class="mb-3">
+                <label for="unitsConsumed" class="form-label">Units Consumed**</label>
+                <input type="number" class="form-control" id="model" name="model" placeholder="Enter Units Consumed by User"  formControlName="unitsConsumed">
+                <div style="color: red" *ngIf="unitsConsumed && unitsConsumed.invalid && unitsConsumed.touched">Number of units should be minimum 1</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="unitPrice" class="form-label">Per Unit Price**</label>
+                <input type="number" class="form-control" id="rentalPrice" name="rentalPrice" placeholder="Enter Per Unit price"  formControlName="unitPrice">
+                <div style="color: red" *ngIf="unitPrice && unitPrice.invalid && unitPrice.touched">Price cannot be null</div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="allowedLoad" class="form-label">LoadAllowed**</label>
+                <input type="number" class="form-control" id="allowedLoad" name="allowedLoad" placeholder="Enter KWA Load Allowed"  formControlName="allowedLoad">
+                <div style="color: red" *ngIf="allowedLoad && allowedLoad.invalid && allowedLoad.touched">Required field</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="startDate" class="form-label">Start Date**</label>
+                <input type="date" class="form-control" id="startDate" name="startDate" placeholder="Enter Start Date "  formControlName="startDate">
+                <div style="color: red" *ngIf="startDate && startDate.invalid && startDate.touched">Date is Required</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="endDate" class="form-label">End Date**</label>
+                <input type="date" class="form-control" id="endDate" name="endDate" placeholder="Enter the End Date"  formControlName="endDate">
+                <div style="color: red" *ngIf="endDate && endDate.invalid && endDate.touched">End Date should be greater than Start date</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="dueDate" class="form-label">Due Date**</label>
+                <input type="date" class="form-control" id="dueDate" name="dueDate" placeholder="Enter Due Date to Pay Bill"  formControlName="dueDate">
+                <div style="color: red" *ngIf="dueDate && dueDate.invalid && dueDate.touched">Due Date should be greater than End date</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="lateCharge" class="form-label">Late Charge**</label>
+                <input type="number" class="form-control" id="lateCharge" name="lateCharge" placeholder="Enter late charge fine amount"  formControlName="lateCharge">
+                <div style="color: red" *ngIf="lateCharge && lateCharge.invalid && lateCharge.touched">Minimum Late charge should be 100</div>
+              </div>
+  
+              <div class="d-grid gap-2">
+                <button [disabled]="createBillForm.invalid" type="submit" class="btn btn-primary">Create Bill</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

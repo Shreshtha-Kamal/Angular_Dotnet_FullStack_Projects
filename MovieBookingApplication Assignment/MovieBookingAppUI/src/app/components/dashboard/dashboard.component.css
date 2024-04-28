@@ -1,0 +1,13 @@
+#search{
+    background-color: rgb(255, 240, 240);
+    border-radius: 4px;
+    max-height: 170px;
+}
+.car-detail{
+    background-color:rgb(255, 240, 240);
+    border-radius: 4px;
+}
+.custom-btn{
+    background-color: rgb(131, 105, 203);
+    color: white;
+}

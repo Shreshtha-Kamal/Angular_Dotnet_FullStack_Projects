@@ -1,0 +1,27 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-fluid p-2">
+      <a class="navbar-brand nav-item ms-2" [routerLink]="getDashboardLink()" ><h2 class="mb-0">PowerBill.com</h2></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <li *ngIf="isAdminLogIn" class="nav-item">
+            <a class="nav-link font-family " routerLink="/registerUser">Create User</a>
+          </li>
+
+          <li *ngIf="isAuthenticated" class="nav-item">
+            <a class="nav-link font-family" (click)="logOutUser()" routerLink="">Logout</a>
+          </li>
+
+          <li  class="nav-item" *ngIf="!isAuthenticated">
+            <a class="nav-link font-family" routerLink="/login">LOGIN</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>

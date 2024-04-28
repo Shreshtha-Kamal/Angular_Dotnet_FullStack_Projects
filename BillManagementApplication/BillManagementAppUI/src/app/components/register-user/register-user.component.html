@@ -1,0 +1,139 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <div class="card">
+          <div class="card-body">
+
+            <div class="mb-3">
+                <label for="userType" class="form-label"> Created User Type**</label>
+                <select class="form-control" id="userType" name="userType" [(ngModel)]="selectedUserType" (change)="onUserTypeChange()">
+                  <option value="User">User</option>
+                  <option value="Admin">Admin</option>
+                </select>
+            </div>
+
+
+            <h3 class="card-title text-center fw-bold" *ngIf="isUserSelectedAsUserType">Add User</h3>
+  
+            <form *ngIf="isUserSelectedAsUserType" [formGroup]="createUserForm" >
+              <div class="mb-3">
+                <label for="userName" class="form-label">UserName**</label>
+                <input type="text" class="form-control" id="userName" name="userName" placeholder="Enter UserName" formControlName="userName" >
+                <div style="color: red" *ngIf="userName && userName.invalid && userName.touched">UserName should be atleast of 2 characters</div>
+              </div>
+  
+              <div class="mb-3">
+                <label for="name" class="form-label">Name**</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter Full Name of User"  formControlName="name">
+                <div style="color: red" *ngIf="name && name.invalid && name.touched">Required</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Enter Email**</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter the Email"  formControlName="email">
+                <div style="color: red" *ngIf="email && email.invalid && email.touched">Email Must be Proper</div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="phoneNumber" class="form-label">PhoneNumber**</label>
+                <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number"  formControlName="phoneNumber">
+                <div style="color: red" *ngIf="phoneNumber && phoneNumber.invalid && phoneNumber.touched">Required field</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="alternatePhoneNumber" class="form-label">Alternate Phone Number**</label>
+                <input type="text" class="form-control" id="alternatePhoneNumber" name="alternatePhoneNumber" placeholder="Enter Alternate PhoneNumber "  formControlName="alternatePhoneNumber">
+                <div style="color: red" *ngIf="alternatePhoneNumber && alternatePhoneNumber.invalid && alternatePhoneNumber.touched">Alternate Number is Required</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="loadAllowed" class="form-label">Enter Connection Load(2,4,6,8)**</label>
+                <input type="text" class="form-control" id="alternatePhoneNumber" name="alternatePhoneNumber" placeholder="Enter KWA Load Allowed"  formControlName="loadAllowed">
+                <div style="color: red" *ngIf="loadAllowed && loadAllowed.invalid && loadAllowed.touched">Required</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="address" class="form-label">Address**</label>
+                <input type="text" class="form-control" id="address" name="address" placeholder="Enter the Address"  formControlName="address">
+                <div style="color: red" *ngIf="address && address.invalid && address.touched">End Date should be greater than Start date</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="pincode" class="form-label">Pincode**</label>
+                <input type="text" class="form-control" id="pincode" name="pincode" placeholder="Enter Pincode"  formControlName="pincode">
+                <div style="color: red" *ngIf="pincode && pincode.invalid && pincode.touched">Due Date should be greater than End date</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="password" class="form-label">Password**</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password"  formControlName="password">
+                <div style="color: red" *ngIf="password && password.invalid && password.touched">Minimum Late charge should be 100</div>
+              </div>
+  
+              <div class="d-grid gap-2">
+                <button [disabled]="createUserForm.invalid" type="submit" class="btn btn-primary" (click)="createUser()">Add User</button>
+              </div>
+            </form>
+
+
+            <h3 class="card-title text-center fw-bold" *ngIf="!isUserSelectedAsUserType">Add Admin</h3>
+  
+            <form *ngIf="!isUserSelectedAsUserType" [formGroup]="createAdminForm" >
+              <div class="mb-3">
+                <label for="userName" class="form-label">UserName**</label>
+                <input type="text" class="form-control" id="userName" name="userName" placeholder="Enter UserName" formControlName="userName" >
+                <div style="color: red" *ngIf="userName && userName.invalid && userName.touched">UserName should be atleast of 2 characters</div>
+              </div>
+  
+              <div class="mb-3">
+                <label for="name" class="form-label">Name**</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter Full Name of User"  formControlName="name">
+                <div style="color: red" *ngIf="name && name.invalid && name.touched">Required</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Enter Email**</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter the Email"  formControlName="email">
+                <div style="color: red" *ngIf="email && email.invalid && email.touched">Email Must be Proper</div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="phoneNumber" class="form-label">PhoneNumber**</label>
+                <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number"  formControlName="phoneNumber">
+                <div style="color: red" *ngIf="phoneNumber && phoneNumber.invalid && phoneNumber.touched">Required field</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="alternatePhoneNumber" class="form-label">Alternate Phone Number**</label>
+                <input type="text" class="form-control" id="alternatePhoneNumber" name="alternatePhoneNumber" placeholder="Enter Alternate PhoneNumber "  formControlName="alternatePhoneNumber">
+                <div style="color: red" *ngIf="alternatePhoneNumber && alternatePhoneNumber.invalid && alternatePhoneNumber.touched">Alternate Number is Required</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="address" class="form-label">Address**</label>
+                <input type="text" class="form-control" id="address" name="address" placeholder="Enter the Address"  formControlName="address">
+                <div style="color: red" *ngIf="address && address.invalid && address.touched">End Date should be greater than Start date</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="pincode" class="form-label">Pincode**</label>
+                <input type="text" class="form-control" id="pincode" name="pincode" placeholder="Enter Pincode"  formControlName="pincode">
+                <div style="color: red" *ngIf="pincode && pincode.invalid && pincode.touched">Due Date should be greater than End date</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="password" class="form-label">Password**</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password"  formControlName="password">
+                <div style="color: red" *ngIf="password && password.invalid && password.touched">Minimum Late charge should be 100</div>
+              </div>
+  
+              <div class="d-grid gap-2">
+                <button [disabled]="createAdminForm.invalid" type="submit" class="btn btn-primary" (click)="createAdmin()">Add Admin</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

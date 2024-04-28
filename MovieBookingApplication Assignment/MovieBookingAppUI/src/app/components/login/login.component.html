@@ -1,0 +1,29 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <div class="card shadow loginForm">
+          <div class="card-body">
+            <h2 class="card-title text-center fw-bold text-decoration-underline">Login</h2>
+  
+            <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+              <div class="mb-3">
+                <label for="userName" class="form-label">UserName**</label>
+                <input type="text" class="form-control" id="userName" name="userName" placeholder="Enter your UserName" formControlName="userName">
+                <div style="color: red" *ngIf="userName && userName.invalid && userName.touched ">Invalid UserName</div>
+              </div>
+  
+              <div class="mb-3">
+                <label for="password" class="form-label">Password**</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password"  formControlName="password">
+                <div style="color: red" *ngIf="password && password.invalid && password.touched">Password should be atleast of 6 characters</div>
+              </div>
+  
+              <div class="d-grid gap-2">
+                <button [disabled]="loginForm.invalid" type="submit" class="btn btn-primary">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

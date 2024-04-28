@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+.bodyTag{
+    background-color: rgb(173, 203, 231) ;
+    /* background-image: url('/assets/timothy-eberly-dTLlhgeEJWg-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0 */
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

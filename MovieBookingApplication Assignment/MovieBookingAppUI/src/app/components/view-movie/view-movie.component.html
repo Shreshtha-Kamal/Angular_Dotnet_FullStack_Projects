@@ -1,0 +1,51 @@
+
+<div class="card container mt-4 mb-4 py-3 agreementDetail">
+    <div class="row g-0 ">
+        <!-- Left side for car image -->
+        <div class="col-6 d-flex align-items-center ">
+            <img src="{{movieWithShowDetails?.bannerImageUrl}}" class="img-fluid rounded-start rounded-end" style="height:80% " alt="Car Image">
+        </div>
+        
+        <!-- Right side for Agreement details -->
+        <div class="col-6  rentDetails d-flex flex-column align-items-center mx-auto">
+            <div class="card-body">
+                <div class="container">
+                    <h4 class="mb-2 ">Movie Details</h4>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Name</th>
+                                <td>{{movieWithShowDetails?.name}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Genre</th>
+                                <td>{{movieWithShowDetails?.genre}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Director</th>
+                                <td>{{movieWithShowDetails?.directorName}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Description</th>
+                                <td> {{movieWithShowDetails?.description}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Show Date</th>
+                                <td> {{movieWithShowDetails?.movieShow.startDate}} - {{movieWithShowDetails?.movieShow.endDate}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Timing</th>
+                                <td> {{movieWithShowDetails?.movieShow.startTime}} - {{movieWithShowDetails?.movieShow.endTime}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Seats Added</th>
+                                <td> {{movieWithShowDetails?.movieShow.totalSeats}} seats added**</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

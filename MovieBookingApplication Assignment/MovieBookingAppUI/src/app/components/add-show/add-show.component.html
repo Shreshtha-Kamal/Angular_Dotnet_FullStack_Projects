@@ -1,0 +1,54 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <div class="card shadow loginForm">
+          <div class="card-body">
+            <h2 class="card-title text-center fw-bold text-decoration-underline">Login</h2>
+  
+            <form [formGroup]="addShowForm" (ngSubmit)="addShow()">
+              <div class="mb-3">
+                <label for="startDate" class="form-label">Start Date**</label>
+                <input type="date" class="form-control" id="startDate" name="startDate" placeholder="Enter Show Start Date" formControlName="startDate">
+                <div style="color: red" *ngIf="startDate && startDate.invalid && startDate.touched ">Enter Correct StartDate</div>
+              </div>
+  
+              <div class="mb-3">
+                <label for="endDate" class="form-label">End Date**</label>
+                <input type="date" class="form-control" id="endDate" name="endDate" placeholder="Enter Show End Date"  formControlName="endDate">
+                <div style="color: red" *ngIf="endDate && endDate.invalid && endDate.touched">Enter Correct End Date</div>
+              </div>
+              <div class="mb-3">
+                <label for="startTime" class="form-label">Start Time**</label>
+                <input type="time" class="form-control" id="startTime" name="startTime" placeholder="Enter Show StartTime"  formControlName="startTime">
+                <div style="color: red" *ngIf="startTime && startTime.invalid && startTime.touched">First Show Starts from 09:00 </div>
+              </div>
+              <div class="mb-3">
+                <label for="endTime" class="form-label">End Time**</label>
+                <input type="time" class="form-control" id="endTime" name="endTime" placeholder="Enter Endtime of Show"  formControlName="endTime">
+                <div style="color: red" *ngIf="endTime && endTime.invalid && endTime.touched">Last Show Ends at 00:00 </div>
+              </div>
+              <div class="mb-3">
+                <label for="totalSeats" class="form-label">Total Seats**</label>
+                <input type="url" class="form-control" id="totalSeats" name="totalSeats" placeholder="Enter total Seats in show"  formControlName="totalSeats">
+                <div style="color: red" *ngIf="totalSeats && totalSeats.invalid && totalSeats.touched">Minimum value is 10</div>
+              </div>
+              <div class="mb-3">
+                <label for="price" class="form-label">Price per Seat**</label>
+                <input type="url" class="form-control" id="price" name="totalSeats" placeholder="Enter Price of 1 Seat"  formControlName="price">
+                <div style="color: red" *ngIf="price && price.invalid && price.touched">Minimum value is 10</div>
+              </div>
+              <div class="mb-3">
+                <label for="screenNumber" class="form-label"> Screen Number**</label>
+                <input type="number" class="form-control" id="screenNumber" name="screenNumber" placeholder="Enter Movie banner image link"  formControlName="screenNumber">
+                <div style="color: red" *ngIf="screenNumber && screenNumber.invalid && screenNumber.touched">Screen Number should be between 1-4</div>
+              </div>
+  
+              <div class="d-grid gap-2">
+                <button [disabled]="addShowForm.invalid" type="submit" class="btn btn-primary">Add Movie</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,39 @@
+<div class="container">
+    <h2 class="my-3 fs-3 text-secondary text-center text-decoration-underline">All Movies</h2>
+    <div class="d-flex flex-column col-9 mx-auto" >
+        <div class="d-flex flex-row my-2  car-detail" *ngFor="let movie of allMovies" >
+            <div class="col-md-4 p-3">
+                <img src="{{movie.bannerImageUrl}}" class="img-fluid rounded h-100">
+            </div>
+            <div class="col-md-4 my-auto mx-2">
+                <h2 class="my-2 fs-4 text-secondary">
+                    {{movie.name}} <span class="mx-1">|</span>
+                    <span class="text-secondary fs-6">{{movie.genre}}</span>
+                </h2>
+                <h2 class="font-weight-medium fs-6 my-2S text-lg text-success">
+                    Director: {{movie.directorName}}
+                </h2>
+                <h2 class="font-weight-medium fs-6 my-2S text-lg text-success">
+                    {{movie.description}}
+                </h2>
+            </div>
+            <div class="col-md-4  my-auto">
+                <div class="mx-auto h-50 rounded p-5 text-center ">
+                    <p class="text-lg my-2">
+                        MovieLength: {{movie.movieLengthInMinutes}}
+                    </p>
+                    <p class="text-lg my-2 text-success" *ngIf="movie.isShowAdded">
+                        Show Already Added
+                    </p>
+                    <button class="btn btn-warning mb-2" *ngIf="!movie.isShowAdded" [routerLink]="['/addShow', movie.movieId]">
+                        <span class="mx-1 text-lg">Add Show</span>
+                    </button>
+                    <button class="btn btn-warning mb-2" [routerLink]="['/viewMovie', movie.movieId]">
+                        <span class="mx-1 text-lg">View Movie</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

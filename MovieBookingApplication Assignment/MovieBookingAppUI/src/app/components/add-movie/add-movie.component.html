@@ -1,0 +1,49 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <div class="card shadow loginForm">
+          <div class="card-body">
+            <h2 class="card-title text-center fw-bold text-decoration-underline">Login</h2>
+  
+            <form [formGroup]="addMovieForm" (ngSubmit)="addMovie()">
+              <div class="mb-3">
+                <label for="movieName" class="form-label">Movie Name**</label>
+                <input type="text" class="form-control" id="movieName" name="movieName" placeholder="Enter Name of Movie" formControlName="movieName">
+                <div style="color: red" *ngIf="movieName && movieName.invalid && movieName.touched ">Invalid MovieName</div>
+              </div>
+  
+              <div class="mb-3">
+                <label for="genre" class="form-label">Movie Genre**</label>
+                <input type="text" class="form-control" id="genre" name="genre" placeholder="Enter Mobie Genre"  formControlName="genre">
+                <div style="color: red" *ngIf="genre && genre.invalid && genre.touched">Genre should be atleast of 4 characters</div>
+              </div>
+              <div class="mb-3">
+                <label for="director" class="form-label">Director Name**</label>
+                <input type="text" class="form-control" id="director" name="director" placeholder="Enter Movie Director Name"  formControlName="director">
+                <div style="color: red" *ngIf="director && director.invalid && director.touched">Password should be atleast of 6 characters</div>
+              </div>
+              <div class="mb-3">
+                <label for="description" class="form-label">Movie Description**</label>
+                <input type="text" class="form-control" id="description" name="description" placeholder="Enter Movie Description"  formControlName="description">
+                <div style="color: red" *ngIf="description && description.invalid && description.touched">Password should be atleast of 6 characters</div>
+              </div>
+              <div class="mb-3">
+                <label for="bannerImageLink" class="form-label">Movie Banner Image Link**</label>
+                <input type="url" class="form-control" id="bannerImageLink" name="bannerImageLink" placeholder="Enter Movie banner image link"  formControlName="bannerImageLink">
+                <div style="color: red" *ngIf="bannerImageLink && bannerImageLink.invalid && bannerImageLink.touched">Password should be atleast of 6 characters</div>
+              </div>
+              <div class="mb-3">
+                <label for="movieLength" class="form-label"> Movie Length**</label>
+                <input type="number" class="form-control" id="movieLength" name="movieLength" placeholder="Enter Movie banner image link"  formControlName="movieLength">
+                <div style="color: red" *ngIf="movieLength && movieLength.invalid && movieLength.touched">Password should be atleast of 6 characters</div>
+              </div>
+  
+              <div class="d-grid gap-2">
+                <button [disabled]="addMovieForm.invalid" type="submit" class="btn btn-primary">Add Movie</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
